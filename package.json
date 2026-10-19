@@ -1,6 +1,6 @@
 {
   "name": "dsh-ark-plans",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Volcengine Ark (火山方舟) Agent Plan and Coding Plan model routes for DeepSeek Harness: two ready provider profiles declared on the shipped llm-pi-ai adapter, a session-header pill showing each plan's remaining allowance and when it next refreshes, and a Settings page that enables or disables individual models in the model selector.",
   "type": "module",
   "license": "MIT",
@@ -14,7 +14,8 @@
     "url": "https://github.com/HaydenSmith1121/dsh-ark-plans/issues"
   },
   "engines": {
-    "node": "^22.19.0 || >=24.0.0"
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.1.6-alpha.1 <0.1.7-0 || >=0.1.7-alpha.0 <0.2.0-0 || >=0.2.0-rc.1 <0.2.1-0 || >=0.2.1-rc.2 <0.3.0-0"
   },
   "main": "./lib/index.js",
   "exports": {
@@ -49,11 +50,11 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "4.0.2",
-    "@deepseek-ai/dsh-client-ui-conversation": "0.1.6-alpha.1",
-    "@deepseek-ai/dsh-credentials": "0.1.6-alpha.1",
-    "@deepseek-ai/dsh-llm-pi-ai": "0.1.6-alpha.1",
-    "@deepseek-ai/schemastery": "^3.18.1-rc.1",
+    "@deepseek-ai/cordis": ">=4.0.2 <5.0.0",
+    "@deepseek-ai/dsh-client-ui-conversation": ">=0.1.6-alpha.1 <0.3.0-0",
+    "@deepseek-ai/dsh-credentials": ">=0.1.6-alpha.1 <0.3.0-0",
+    "@deepseek-ai/dsh-llm-pi-ai": ">=0.1.6-alpha.1 <0.3.0-0",
+    "@deepseek-ai/schemastery": ">=3.18.2 <4.0.0",
     "react": "^18.2.0"
   },
   "keywords": [
