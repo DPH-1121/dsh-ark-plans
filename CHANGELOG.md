@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.2
+
+**兼容性复核：dsh `0.2.1-rc.3`**。代码与组合未变，只把验证基线推到最新 nightly：
+
+- 清单通过 rc.3 自带的插件闸门（`evaluatePluginCompatibility`；`engines.dsh` 的 0.2.1 窗口本就覆盖 rc.3）。
+- 以隔离 `DSH_HOME` 装入 rc.3 profile，`--dump-config` 组合成功、无兼容性告警。
+- `npm run check`（组合清单一致性 + 选择逻辑 + client 半装载）全通过。
+
 ## 0.3.0
 
 **模型启用/停用**：设置里新增「模型管理」页，逐条勾选决定哪些方舟模型出现在模型选择器里，
